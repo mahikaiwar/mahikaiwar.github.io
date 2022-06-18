@@ -8,9 +8,9 @@
         </div>
         <p class="description" v-html="project.description"></p>
       </div>
-    </section>
-    <section class="images">
-      <img v-for="i in project.images" :src="i.img" alt="" />
+      <div class="images">
+        <img v-for="(i, idx) in project.images" :key="idx" :src="`/projects/${project.id}/${i.img}`" alt=""/>
+      </div>
     </section>
   </main>
 </template>
