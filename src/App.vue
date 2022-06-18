@@ -13,7 +13,10 @@
     <section id="work">
       <h1>My Work</h1>
       <div class="gallery">
-
+        <div class="project" v-for="project in projects" :key="project.id">
+          <div class="image" :style="{backgroundImage: `url('/projects/${project.id}/${project.heroImage}')`}"></div>
+          <div class="title">{{ project.title }}</div>
+        </div>
       </div>
     </section>
   </main>
@@ -24,10 +27,16 @@
 
 <script>
 
+import {projects} from '@/config';
 
 export default {
   name: 'App',
-  components: {}
+  components: {},
+  computed: {
+    projects() {
+      return projects;
+    }
+  }
 };
 </script>
 
@@ -59,7 +68,6 @@ html, body {
 .btn {
   @include buttonBG(#fff);
   width: 180px;
-  height: 80px;
   outline: none;
   cursor: pointer;
   background: none;
@@ -96,9 +104,11 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    p{
+
+    p {
       margin: 1rem 0;
     }
+
     .btn {
       width: 400px;
     }
@@ -108,9 +118,48 @@ header {
 main {
   section {
     height: 98vh;
+    padding: 0 20%;
+
     h1 {
       text-align: center;
       font-size: 8rem;
+    }
+  }
+
+  section#work {
+    div.gallery {
+      display: flex;
+      flex-wrap: wrap;
+
+      div.project {
+        width: 300px;
+        margin: 2rem;
+
+        div.image {
+          width: 100%;
+          height: 0;
+          padding-bottom: 56.25%;
+          background-position: center;
+          background-size: cover;
+        }
+
+        div.title {
+          font-size: 1.5rem;
+          text-align: center;
+          margin: 1rem 0;
+        }
+        cursor: pointer;
+
+        &:hover {
+          background-color: whitesmoke;
+          transition: all 0.3s ease-in-out;
+          color: #823535;
+          transform: scale(1.1);
+        }
+
+      }
+
+
     }
   }
 }
