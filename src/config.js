@@ -56,60 +56,27 @@ export const projects = [
             title: '',
             description: ''
         },{
-            img: 'magsack1.jpeg',
+            img: 'magsack1.jpg',
             title: '',
             description: ''
         },{
-            img: 'magsman2.jpeg',
+            img: 'magsman2.jpg',
             title: '',
             description: ''
         },{
-            img: 'magsack2.jpeg',
+            img: 'magsack2.jpg',
             title: '',
             description: ''
         },{
-            img: 'magsman3.jpeg',
+            img: 'magsman3.jpg',
             title: '',
             description: ''
         },{
-            img: 'magsmandes.jpeg',
+            img: 'magsmandes.jpg',
             title: '',
             description: ''
         },{
-            img: 'magsackdes.jpeg',
-            title: '',
-            description: ''
-        }]
-    },
-    {
-        id: "tnwa",
-        title: "Twelfth Night Webtoon Adaptation",
-        description: "",
-        heroImage: "img.png",
-        images: [{
-            img: 'img.png',
-            title: '',
-            description: ''
-        }]
-    },
-    {
-        id: "tnwa",
-        title: "Twelfth Night Webtoon Adaptation",
-        description: "",
-        heroImage: "img.png",
-        images: [{
-            img: 'img.png',
-            title: '',
-            description: ''
-        }]
-    },
-    {
-        id: "tnwa",
-        title: "Twelfth Night Webtoon Adaptation",
-        description: "",
-        heroImage: "img.png",
-        images: [{
-            img: 'img.png',
+            img: 'magsackdes.jpg',
             title: '',
             description: ''
         }]
