@@ -47,9 +47,9 @@ export const projects = [
         }]
     },
     {
-        id: "tnwa",
-        title: "Twelfth Night Webtoon Adaptation",
-        description: "",
+        id: "mags",
+        title: "Manga-ACK Graphic Short Story",
+        description: "One of my courses, 'Creative Expression,' gave me the chance to take up a creative/research based project related to absolutely anything. I immediately knew that I wanted to create a short visual narration. I studied the different ways that stories were told in Amar Chitra Kathas, and in manga, and created a self-contained short story that alternated between the styles.",
         heroImage: "img.png",
         images: [{
             img: 'img.png',
