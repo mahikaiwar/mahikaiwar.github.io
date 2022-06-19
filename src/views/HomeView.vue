@@ -22,13 +22,13 @@
           Recent Work
         </h1>
         <div class="projects flex flex-wrap">
-          <div v-for="project in projects" :key="project.id" class="project w-3/12 m-10 group relative cursor-pointer overflow-hidden rounded-full hover:rounded-none transition-all"
+          <router-link :to="{name: 'project', params:{projectId: project.id}}" v-for="project in projects" :key="project.id" class="project w-3/12 m-10 group relative cursor-pointer overflow-hidden transition-all"
                @mouseenter="hoveredProject = project" @mouseleave="hoveredProject=null">
             <img :src="`/projects/${project.id}/${project.heroImage}`" :alt="`${project.name} image`"
                  class="block w-full object-cover object-center grayscale group-hover:grayscale-0 aspect-square">
-            <div class="absolute inset-x-0 bottom-0 h-16 bg-black/60 invisible group-hover:visible p-2">{{ project.title }}</div>
-            <div class="tinter absolute top-0 left-0 w-full h-full bg-pink-900/60 group-hover:invisible"></div>
-          </div>
+            <div class="absolute inset-x-0 bottom-0 bg-black/60 invisible group-hover:visible p-2">{{ project.title }}</div>
+            <div class="tinter absolute top-0 left-0 w-full h-full bg-pink-900/80 group-hover:invisible"></div>
+          </router-link>
         </div>
       </div>
     </section>
@@ -79,12 +79,3 @@ export default {
   }
 };
 </script>
-
-<style>
-
-
-main {
-  background-image: url('@/assets/Banner.png');
-}
-
-</style>
