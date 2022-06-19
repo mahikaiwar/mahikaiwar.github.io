@@ -82,3 +82,19 @@ export const projects = [
         }]
     }
 ]
+
+export const about = {
+    name: 'Mahi Kaiwar',
+    shortDescription: 'Art, Illustration, Design, Animation',
+    description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc neque nulla, suscipit vitae convallis vel, lobortis in erat. Aenean diam tortor, vulputate ac nisl quis, iaculis molestie lorem. Nam non iaculis quam. Fusce at lobortis magna. Maecenas tempus est eget velit suscipit pulvinar. Donec non facilisis sem. Maecenas sollicitudin purus ante, a maximus nibh rhoncus sit amet',
+    socialLinks: [
+        {
+            type: "instagram",
+            url: 'https://instagram.com'
+        },
+        {
+            type: "deviant-art",
+            url: 'https://deviant-art.com'
+        },
+    ]
+}
