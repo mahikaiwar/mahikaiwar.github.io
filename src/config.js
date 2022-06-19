@@ -52,9 +52,9 @@ export const projects = [
         description: "One of my courses, 'Creative Expression,' gave me the chance to take up a creative/research based project related to absolutely anything. I immediately knew that I wanted to create a short visual narration. I studied the different ways that stories were told in Amar Chitra Kathas, and in manga, and created a self-contained short story that alternated between the styles.",
         heroImage: "magscover.jpg",
         images: [{
-            img: 'magsman1.jpeg',
-            title: '',
-            description: ''
+            img: 'magsman1.jpg',
+            title: 'Amazing title here',
+            description: 'lots of descriptive text that goes here to fill out the space and appear to be something worth reading for aloignment purposes'
         },{
             img: 'magsack1.jpg',
             title: '',
