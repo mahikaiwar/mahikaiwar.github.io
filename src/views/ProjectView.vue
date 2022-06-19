@@ -15,13 +15,13 @@
     </aside>
     <section
         class="content h-full overflow-y-auto flex-1 bg-black/60 px-10 py-10 cursor-pointer">
-      <div class="projects columns-3">
-        <div v-for="image in project.images" :key="image.img" class="m-2 group hover:scale-105 relative"
+      <div class="projects columns-3" v-viewer>
+        <div v-for="(image, idx) in project.images" :key="image.img" class="m-2 group hover:scale-105 relative"
              @mouseenter="selectedImage = image" @mouseleave="selectedImage = null">
-          <img :src="`/projects/${project.id}/${image.img}`" :alt="`Project Image: ${image.title}`">
-          <div class="absolute inset-x-0 bottom-0 w-100 bg-black/50 invisible group-hover:visible p-2"
+          <img :src="`/projects/${project.id}/${image.img}`" :alt="image.title || `${project.title} Image: ${idx+1}`">
+          <div class="absolute inset-x-0 bottom-0 w-100 bg-black/60 invisible group-hover:visible p-4"
                v-if="image.title || image.description">
-            <h4 class="font-bold my-2">{{ image.title }}</h4>
+            <h4 class="font-bold ">{{ image.title }}</h4>
             <p v-html="image.description" class="prose text-sm"></p>
           </div>
         </div>
