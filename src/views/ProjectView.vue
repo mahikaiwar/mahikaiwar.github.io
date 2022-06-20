@@ -1,5 +1,5 @@
 <template>
-  <main class="lg:h-screen bg-center bg-cover text-red-100 lg:flex" :style="{backgroundImage}">
+  <main id="project-view" class="lg:h-screen bg-center bg-cover text-red-100 lg:flex overflow-x-wrap" :style="{backgroundImage}">
     <aside class="bg-black/60 lg:w-3/12 px-6 py-6 lg:h-full lg:overflow-y-auto">
       <div class="back">
         <router-link :to="{name:'home'}">Home</router-link>
@@ -15,11 +15,11 @@
     </aside>
     <section
         class="content h-full overflow-y-auto flex-1 bg-black/60 px-10 py-10 cursor-pointer">
-      <div class="projects columns-1 md:columns-2 lg:columns-3" v-viewer>
+      <div class="images columns-1 md:columns-2 lg:columns-3" v-viewer>
         <div v-for="(image, idx) in project.images" :key="image.img" class="m-2 group hover:scale-105 relative"
              @mouseenter="selectedImage = image" @mouseleave="selectedImage = null">
           <img :src="`/projects/${project.id}/${image.img}`" :alt="image.title || `${project.title} Image: ${idx+1}`">
-          <div class="absolute inset-x-0 bottom-0 w-100 bg-black/60 invisible group-hover:visible p-4"
+          <div class="absolute inset-x-0 bottom-0 w-100 bg-black/60 visible lg:invisible group-hover:visible p-4"
                v-if="image.title || image.description">
             <h4 class="font-bold ">{{ image.title }}</h4>
             <p v-html="image.description" class="prose text-sm"></p>
