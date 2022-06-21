@@ -127,60 +127,87 @@ export const projects = [
         heroImage: "tradeyes.jpg",
         images: [{
             img: 'tradwomen.jpg',
-            title: 'Amazing title here',
-            description: 'lots of descriptive text that goes here to fill out the space and appear to be something worth reading for aloignment purposes'
+            title: '',
+            description: 'Multi-media'
         },{
             img: 'tradbird.JPG',
             title: '',
-            description: ''
+            description: 'Still life'
         },{
             img: 'tradhouse.jpg',
             title: '',
-            description: ''
+            description: 'Nature study'
         },{
             img: 'tradheli.jpg',
             title: '',
-            description: ''
+            description: 'Plein air/from image'
         },{
             img: 'tradalak.jpg',
             title: '',
-            description: ''
+            description: 'Plein air'
         },{
             img: 'tradcoco.jpg',
             title: '',
-            description: ''
+            description: 'Still life'
         },{
             img: 'tradeyes.jpg',
             title: '',
-            description: ''
+            description: 'Oil on ply'
         },{
             img: 'tradmoth.jpg',
             title: '',
-            description: ''
+            description: 'Multi-media'
         },{
             img: 'tradhib.jpg',
             title: '',
-            description: ''
+            description: 'From image'
         },{
             img: 'traddabbas.jpg',
             title: '',
-            description: ''
+            description: 'From image'
         },{
             img: 'tradalien.jpg',
             title: '',
-            description: ''
+            description: 'From image'
         },{
-            img: 'tradwomen.jpg',
+            img: 'tradmother.jpg',
             title: '',
-            description: ''
+            description: 'Multi-media'
         },{
             img: 'tradkrea.JPG',
             title: '',
-            description: ''
+            description: 'Plein air'
         },{
             img: 'tradchar.jpg',
             title: '',
-            description: ''
+            description: 'Nature study'
+        }]
+    },
+    {
+        id: "ljm",
+        title: "Work for School Magazine and Literary Journal",
+        description: "Here are some of the illustrations I made for my high school magazine and Literary Journal",
+        heroImage: "ljmlcover.jpg",
+        images: [{
+            img: 'ljmresil.jpg',
+            title: 'Illustration for a short story',
+            description: 'Oil on canvas'
+        },{
+            img: 'ljmmcover.jpg',
+            title: 'Magazine cover page illustration',
+            description: 'Oil on canvas'
+        },{
+            img: 'ljmoversat.jpg',
+            title: 'Illustration for a short story',
+            description: 'Watercolour'
+        },{
+            img: 'ljmlcover.jpg',
+            title: 'Literary Journal cover page illustration',
+            description: 'Oil on paper'
+        },{
+            img: 'ljmhand.jpg',
+            title: 'Illustration for a short story',
+            description: 'Watercolour'
         }]
     }
 ]
