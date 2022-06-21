@@ -80,6 +80,45 @@ export const projects = [
             title: '',
             description: ''
         }]
+    },
+     {
+        id: "cart",
+        title: "Concept Art",
+        description: "I wrote a short story years ago that was actually mean to be painted. Now that I have finally taken up the digital medium, I have started to make concept art based on the short story.",
+        heroImage: "cartcon1.JPG",
+        images: [{
+            img: 'carthead2.JPG',
+            title: 'Amazing title here',
+            description: 'lots of descriptive text that goes here to fill out the space and appear to be something worth reading for aloignment purposes'
+        },{
+            img: 'cartspin.gif',
+            title: '',
+            description: ''
+        },{
+            img: 'cartcon1.JPG',
+            title: '',
+            description: ''
+        },{
+            img: 'carthead1.JPG',
+            title: '',
+            description: ''
+        },{
+            img: 'cartdes.JPG',
+            title: '',
+            description: ''
+        },{
+            img: 'carthead3.JPG',
+            title: '',
+            description: ''
+        },{
+            img: 'cartcos.JPG',
+            title: '',
+            description: ''
+        },{
+            img: 'cartcon2.jpg',
+            title: '',
+            description: ''
+        }]
     }
 ]
 
