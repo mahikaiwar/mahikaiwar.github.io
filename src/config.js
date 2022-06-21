@@ -81,7 +81,7 @@ export const projects = [
             description: ''
         }]
     },
-     {
+    {
         id: "cart",
         title: "Concept Art",
         description: "I wrote a short story years ago that was actually mean to be painted. Now that I have finally taken up the digital medium, I have started to make concept art based on the short story.",
@@ -116,6 +116,69 @@ export const projects = [
             description: ''
         },{
             img: 'cartcon2.jpg',
+            title: '',
+            description: ''
+        }]
+    },
+    {
+        id: "trad",
+        title: "Traditional Work",
+        description: "Over the past three years, I have worked quite a bit with watercolourand a little with charcoal and oil, for class and otherwise.",
+        heroImage: "tradeyes.jpg",
+        images: [{
+            img: 'tradwomen.jpg',
+            title: 'Amazing title here',
+            description: 'lots of descriptive text that goes here to fill out the space and appear to be something worth reading for aloignment purposes'
+        },{
+            img: 'tradbird.JPG',
+            title: '',
+            description: ''
+        },{
+            img: 'tradhouse.jpg',
+            title: '',
+            description: ''
+        },{
+            img: 'tradheli.jpg',
+            title: '',
+            description: ''
+        },{
+            img: 'tradalak.jpg',
+            title: '',
+            description: ''
+        },{
+            img: 'tradcoco.jpg',
+            title: '',
+            description: ''
+        },{
+            img: 'tradeyes.jpg',
+            title: '',
+            description: ''
+        },{
+            img: 'tradmoth.jpg',
+            title: '',
+            description: ''
+        },{
+            img: 'tradhib.jpg',
+            title: '',
+            description: ''
+        },{
+            img: 'traddabbas.jpg',
+            title: '',
+            description: ''
+        },{
+            img: 'tradalien.jpg',
+            title: '',
+            description: ''
+        },{
+            img: 'tradwomen.jpg',
+            title: '',
+            description: ''
+        },{
+            img: 'tradkrea.JPG',
+            title: '',
+            description: ''
+        },{
+            img: 'tradchar.jpg',
             title: '',
             description: ''
         }]
