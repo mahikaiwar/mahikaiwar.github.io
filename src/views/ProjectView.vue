@@ -7,9 +7,9 @@
       <div class="info-tile text-center">
         <img :src="`/projects/${project.id}/${project.heroImage}`" alt="Logo"
              class="block w-6/12 mx-auto my-4 aspect-square object-cover object-center rounded-full">
-        <h1 class="font-bold text-2xl my-2">{{ project.title }}</h1>
+        <h1 class="font-bold text-5xl my-2">{{ project.title }}</h1>
         <div class="h-0 border my-8"></div>
-        <div class="prose" v-html="project.description">
+        <div class="prose text-2xl" v-html="project.description">
         </div>
       </div>
     </aside>
@@ -35,22 +35,13 @@ import {projects} from '@/config';
 
 export default {
   name: 'ProjectView',
-  components: {},
-  data() {
-    return {
-      selectedImage: null
-    };
-  },
   computed: {
     project() {
       return projects.find(project => project.id === this.$route.params.projectId);
     },
     backgroundImage() {
-      const {project: {id: projectId, heroImage}, selectedImage} = this;
-      if (!selectedImage) {
-        return `url('/projects/${projectId}/${heroImage}')`;
-      }
-      return `url('/projects/${projectId}/${selectedImage.img}')`;
+      const {project: {id: projectId, heroImage}} = this;
+      return `url('/projects/${projectId}/${heroImage}')`;
     }
   }
 };
